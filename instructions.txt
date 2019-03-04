@@ -1,0 +1,25 @@
+python3 -m pip install --user virtualenv
+source env/bin/activate
+
+# Rasa core training
+python -m rasa_core.train -d domain.yml -s stories.md -o models/dialogue
+
+# Run rasa core standalone
+python -m rasa_core.run -d models/dialogue
+
+# Training the nlu with markdown based config
+python -m rasa_nlu.train -c nlu_config.yml --data nlu.md -o models --fixed_model_name nlu --project current --verbose
+
+# Training the nlu with Json config
+python -m rasa_nlu.train -c nlu_config.yml --data train_data/nlu_data -o models --fixed_model_name nlu --project current --verbose
+
+
+## Running it together
+python -m rasa_core.run -d models/dialogue -u models/current/nlu --project current --verbose
+
+python -m rasa_nlu.train -c nlu_config.yml --data train_data/nlu_data -o models --fixed_model_name nlu --project current --verbose
+
+
+sudo docker run -p 8000:8000 rasa/duckling
+
+

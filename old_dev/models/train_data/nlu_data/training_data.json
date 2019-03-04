@@ -1,0 +1,210 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "greet",
+        "text": "hey",
+        "entities": []
+      },
+      {
+        "intent": "greet",
+        "text": "how are you",
+        "entities": []
+      },
+      {
+        "intent": "mood_iamgood",
+        "text": "I am fine thank you",
+        "entities": []
+      },
+      {
+        "intent": "mood_iamgood",
+        "text": "I am well",
+        "entities": []
+      },
+      {
+        "intent": "affirm",
+        "text": "yes",
+        "entities": []
+      },
+      {
+        "intent": "affirm",
+        "text": "yep",
+        "entities": []
+      },
+      {
+        "intent": "affirm",
+        "text": "yeah",
+        "entities": []
+      },
+      {
+        "intent": "workflow_search",
+        "text": "i'm looking to initiate a case",
+        "entities": []
+      },
+      {
+        "intent": "workflow_search",
+        "text": "I want to create a workflow",
+        "entities": []
+      },
+      {
+        "intent": "workflow_search",
+        "text": "I want to create a case management workflow",
+        "entities": [
+          {
+            "end": 34,
+            "start": 19,
+            "entity": "workflowname",
+            "value": "case management"
+          }
+        ]
+      },
+      {
+        "intent": "workflow_search",
+        "text": "I want to create a unified estate workflow",
+        "entities": [
+          {
+            "end": 33,
+            "start": 19,
+            "entity": "workflowname",
+            "value": "unified estate"
+          }
+        ]
+      },
+      {
+        "intent": "workflow_search",
+        "text": "start a wires workflow",
+        "entities": [
+          {
+            "end": 13,
+            "start": 8,
+            "entity": "workflowname",
+            "value": "wires transfer workflow"
+          }
+        ]
+      },
+      {
+        "intent": "workflow_search",
+        "text": "start a bwf workflow",
+        "entities": [
+          {
+            "end": 11,
+            "start": 8,
+            "entity": "workflowname",
+            "value": "bwf workflow"
+          }
+        ]
+      },
+      {
+        "intent": "open_application",
+        "text": "open workflowhub application",
+        "entities": [
+          {
+            "end": 16,
+            "start": 5,
+            "entity": "application",
+            "value": "WorkflowDashboard"
+          }
+        ]
+      },
+      {
+        "intent": "open_application",
+        "text": "open ThreeDR application",
+        "entities": [
+          {
+            "end": 12,
+            "start": 5,
+            "entity": "application",
+            "value": "3DR"
+          }
+        ]
+      },
+      {
+        "intent": "looking_help",
+        "text": "can you help me with cheque request for 10k transfer",
+        "entities": [
+          {
+            "end": 27,
+            "start": 21,
+            "entity": "helpdesk",
+            "value": "MMHelpdesk"
+          },
+          {
+            "end": 43,
+            "start": 40,
+            "entity": "request_type",
+            "value": "10k request"
+          }
+        ]
+      },
+      {
+        "intent": "looking_help",
+        "text": "can you help me with deposit request for retirement accounts",
+        "entities": [
+          {
+            "end": 28,
+            "start": 21,
+            "entity": "helpdesk",
+            "value": "Retirement Helpdesk"
+          },
+          {
+            "end": 51,
+            "start": 41,
+            "entity": "request_type",
+            "value": "Retirements request"
+          }
+        ]
+      },
+      {
+        "intent": "looking_help",
+        "text": "can you help me with transfers request for 529k accounts",
+        "entities": [
+          {
+            "end": 30,
+            "start": 21,
+            "entity": "hepdesk",
+            "value": "Transfers Desk"
+          },
+          {
+            "end": 47,
+            "start": 43,
+            "entity": "request_type",
+            "value": "529K Accounts"
+          }
+        ]
+      },
+      {
+        "intent": "mood_iamgood",
+        "text": "I am fine",
+        "entities": []
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye",
+        "entities": []
+      },
+      {
+        "intent": "goodbye",
+        "text": "goodbye",
+        "entities": []
+      }
+    ],
+    "regex_features" : [
+      {
+        "name": "zipcode",
+        "pattern": "[0-9]{5}"
+      }
+    ],
+    "lookup_tables"  : [
+      {
+        "name": "plates",
+        "elements": "train_data/look_up/data/test/lookup_tables/plates.txt"
+      }
+    ],
+    "entity_synonyms": [
+      {
+        "value": "New York City",
+        "synonyms": ["NYC", "nyc", "the big apple"]
+      }
+    ]
+  }
+}

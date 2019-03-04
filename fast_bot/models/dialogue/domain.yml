@@ -1,0 +1,179 @@
+%YAML 1.1
+---
+actions:
+- utter_greet
+- utter_goodbye
+- utter_default
+- utter_ask_howcanhelp
+- utter_ask_accounttype
+- utter_ask_moreupdates
+- utter_on_it
+- utter_inform_user_account_type
+- utter_just_a_minute
+- utter_display_relevantaccount
+- utter_ask_product_type
+- utter_ask_confirmation
+- utter_ask_adjustments
+- utter_ack_workflow_details
+- utter_list_other_account_types
+- utter_chitchat
+- utter_noworries
+- utter_slots_values
+- action_search_product_type
+- action_search_relevance
+- action_search_other_account_types
+- action_search_adjustments
+config:
+  store_entities_as_slots: true
+entities:
+- account
+- info
+- queue
+- prodtype
+- adjtype
+- relevantaccount
+- producttypeslist
+- adjustmentlist
+- adjustment
+- accounttype
+forms:
+- account_closure_form
+intents:
+- account_closure:
+    use_entities: false
+- chitchat:
+    use_entities: false
+- greet:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- inform:
+    use_entities: true
+- thankyou:
+    use_entities: true
+- request_info:
+    use_entities: true
+- noinfo:
+    use_entities: true
+slots:
+  account:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  account_category:
+    auto_fill: false
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  account_number:
+    auto_fill: false
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  account_type:
+    auto_fill: false
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  accounttype:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  adjtype:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  adjustment:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  adjustmentlist:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  branch:
+    auto_fill: false
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  feedback:
+    auto_fill: false
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  info:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  matches:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  probaccount:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  prodtype:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  producttypeslist:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  queue:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  relevantaccount:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  requested_slot:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+templates:
+  utter_ack_dosearch:
+  - text: ok let me see what I can find
+  utter_ack_findalternatives:
+  - text: ok let me see what else there is
+  utter_ack_workflow_details:
+  - text: 'ok starting a workflow for {accounttype} => {relevantaccount}, Product
+      Type: {prodtype}) for {adjustment}'
+  utter_ask_accounttype:
+  - text: For which type of account?
+  utter_ask_adjustments:
+  - text: Which adjustment type?{adjustmentlist}
+  utter_ask_confirmation:
+  - text: Thank You are you ready to start workflow?
+  utter_ask_howcanhelp:
+  - text: how can I help you?
+  utter_ask_product_type:
+  - text: Which product type?{producttypeslist}
+  utter_ask_queue:
+  - text: Is this for Advisory Account?
+  utter_chitchat:
+  - text: chitchat
+  utter_default:
+  - text: default message
+  utter_display_relevantaccount:
+  - text: Is this for a {relevantaccount} account
+  utter_goodbye:
+  - text: goodbye :(
+  - text: Bye-bye
+  utter_greet:
+  - text: hey there!
+  utter_inform_user_account_type:
+  - text: Got it. You want to open a {accounttype} account.
+  utter_just_a_minute:
+  - text: Just a minute
+  utter_list_other_account_types:
+  - text: 'These are the list of account Types: {matches}'
+  utter_missing_account_type:
+  - text: You are missing Account types. Let me try to help you
+  utter_noworries:
+  - text: No problem
+  utter_on_it:
+  - text: I'm on it
+  utter_slots_values:
+  - text: "I am going to close a account with the following parameters:\n - account_type:\
+      \ {account_type}\n - account_category: {account_category}\n - account_number:\
+      \ {account_number}\n - branch: {branch}\n - feedback: {feedback}"

@@ -1,0 +1,39 @@
+{
+  "action_fingerprints": {
+    "action_listen": {
+      "slots": [
+        "accounttype",
+        "prodtype",
+        "adjustment"
+      ]
+    },
+    "utter_list_other_account_types": {
+      "slots": []
+    },
+    "utter_ack_workflow_details": {
+      "slots": []
+    },
+    "account_closure_form": {
+      "slots": []
+    },
+    "utter_noworries": {
+      "slots": []
+    }
+  },
+  "python": "3.6.7",
+  "max_histories": [
+    3,
+    5,
+    2
+  ],
+  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
+  "policy_names": [
+    "rasa_core.policies.memoization.MemoizationPolicy",
+    "policy.FastSeacrhBotPolicy",
+    "rasa_core.policies.form_policy.FormPolicy"
+  ],
+  "trained_at": "20190301-170122",
+  "rasa_core": "0.13.2",
+  "tensorflow": "1.12.0",
+  "sklearn": "0.20.2"
+}

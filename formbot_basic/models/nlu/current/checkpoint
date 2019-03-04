@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/nitesh/dev/git/rasa_getting_started/formbot_basic/models/nlu/current/intent_classifier_tensorflow_embedding.ckpt"
+all_model_checkpoint_paths: "/home/nitesh/dev/git/rasa_getting_started/formbot_basic/models/nlu/current/intent_classifier_tensorflow_embedding.ckpt"

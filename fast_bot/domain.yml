@@ -1,0 +1,147 @@
+slots:
+  account:
+    type: text
+  info:
+    type: text
+  queue:
+    type: text
+  prodtype:
+    type: text
+  adjtype:
+    type: text
+  probaccount:
+    type: text
+  relevantaccount:
+    type: text
+  producttypeslist:
+    type: text
+  adjustmentlist:
+    type: text
+  matches:
+    type: unfeaturized
+  accounttype:
+    type: text
+  adjustment:
+    type: text
+  account_type:
+    type: unfeaturized
+    auto_fill: false
+  account_category:
+    type: unfeaturized
+    auto_fill: false
+  account_number:
+    type: unfeaturized
+    auto_fill: false
+  branch:
+    type: unfeaturized
+    auto_fill: false
+  feedback:
+    type: unfeaturized
+    auto_fill: false
+  requested_slot:
+    type: unfeaturized
+
+entities:
+  - account
+  - info
+  - queue
+  - prodtype
+  - adjtype
+  - relevantaccount
+  - producttypeslist
+  - adjustmentlist
+  - adjustment
+  - accounttype
+
+intents:
+  - account_closure:
+      use_entities: false
+  - chitchat:
+      use_entities: false
+  - greet
+  - affirm
+  - deny
+  - inform
+  - thankyou
+  - request_info
+  - noinfo
+  - thankyou
+
+
+templates:
+  utter_greet:
+    - "hey there!"
+  utter_goodbye:
+    - "goodbye :("
+    - "Bye-bye"
+  utter_default:
+    - "default message"
+  utter_ack_dosearch:
+    - "ok let me see what I can find"
+  utter_ack_findalternatives:
+    - "ok let me see what else there is"
+  utter_ask_queue:
+    - "Is this for Advisory Account?"
+  utter_ask_product_type:
+    - "Which product type?{producttypeslist}"
+  utter_ask_adjustments:
+    - "Which adjustment type?{adjustmentlist}"
+  utter_ask_howcanhelp:
+    - "how can I help you?"
+  utter_ack_workflow_details:
+    - text: "ok starting a workflow for {accounttype} => {relevantaccount}, Product Type: {prodtype}) for {adjustment}"
+  utter_on_it:
+    - "I'm on it"
+  utter_missing_account_type:
+    - "You are missing Account types. Let me try to help you"
+  utter_ask_accounttype:
+    - "For which type of account?"
+  utter_inform_user_account_type:
+    - "Got it. You want to open a {accounttype} account."
+  utter_just_a_minute:
+    - "Just a minute"
+  utter_display_relevantaccount:
+    - "Is this for a {relevantaccount} account"
+  utter_ask_confirmation:
+    - "Thank You are you ready to start workflow?"
+  utter_list_other_account_types:
+    - "These are the list of account Types: {matches}"
+  utter_chitchat:
+    - text: "chitchat"
+  utter_noworries:
+    - "No problem"
+  utter_slots_values:
+    - text: "I am going to close a account with the following parameters:\n
+               - account_type: {account_type}\n
+               - account_category: {account_category}\n
+               - account_number: {account_number}\n
+               - branch: {branch}\n
+               - feedback: {feedback}"
+
+actions:
+  - utter_greet
+  - utter_goodbye
+  - utter_default
+  - utter_ask_howcanhelp
+  - utter_ask_accounttype
+  - utter_ask_moreupdates
+  - utter_on_it
+  - utter_inform_user_account_type
+  - utter_just_a_minute
+  - utter_display_relevantaccount
+  - utter_ask_product_type
+  - utter_ask_confirmation
+  - utter_ask_adjustments
+  - utter_ack_workflow_details
+  - utter_list_other_account_types
+  - utter_chitchat
+  - utter_noworries
+  - utter_slots_values
+  - action_search_product_type
+  - action_search_relevance
+  - action_search_other_account_types
+  - action_search_adjustments
+
+
+forms:
+  - account_closure_form

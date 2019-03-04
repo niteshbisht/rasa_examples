@@ -1,0 +1,241 @@
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Encountered an exception while running action 'action_suggest'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Circuit breaker tripped. Stopped predicting more actions for sender 'default'
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Failed to run custom action 'action_search_queue'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_search_queue'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Failed to run custom action 'action_search_queue'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_search_queue'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Failed to run custom action 'action_search_queue'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_search_queue'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Failed to run custom action 'action_search_queue'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_search_queue'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Failed to run custom action 'action_search_queue'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_search_queue'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Failed to run custom action 'action_search_queue'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_search_queue'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Failed to run custom action 'action_search_queue'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_search_queue'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Failed to run custom action 'action_search_queue'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_search_queue'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Failed to run custom action 'action_search_queue'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_search_queue'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Failed to run custom action 'action_search_queue'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_search_queue'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Failed to run custom action 'action_search_queue'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_search_queue'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Failed to fill utterance template '{'text': 'Got it. You want to open a {accounttype} account.'}'. Tried to replace 'accounttype' but could not find a value for it. There is no slot with this name nor did you pass the value explicitly when calling the template. Return template without filling the template. 
+Traceback (most recent call last):
+  File "/home/nitesh/env/lib/python3.6/site-packages/rasa_core/nlg/template.py", line 79, in _fill_template_text
+    template["text"] = template["text"].format(**template_vars)
+KeyError: 'accounttype'
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Failed to fill utterance template '{'text': 'Got it. You want to open a {accounttype} account.'}'. Tried to replace 'accounttype' but could not find a value for it. There is no slot with this name nor did you pass the value explicitly when calling the template. Return template without filling the template. 
+Traceback (most recent call last):
+  File "/home/nitesh/env/lib/python3.6/site-packages/rasa_core/nlg/template.py", line 79, in _fill_template_text
+    template["text"] = template["text"].format(**template_vars)
+KeyError: 'accounttype'
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Failed to run custom action 'action_search_product_type'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_search_product_type'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Failed to fill utterance template '{'text': 'ok starting a workflow for {accounttype} => {relevantaccount}, Product Type: {prodtype}) for {adjustment}'}'. Tried to replace 'adjustment' but could not find a value for it. There is no slot with this name nor did you pass the value explicitly when calling the template. Return template without filling the template. 
+Traceback (most recent call last):
+  File "/home/nitesh/env/lib/python3.6/site-packages/rasa_core/nlg/template.py", line 79, in _fill_template_text
+    template["text"] = template["text"].format(**template_vars)
+KeyError: 'adjustment'
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Failed to run custom action 'account_closure_form'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'account_closure_form'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to run custom action 'account_closure_form'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'account_closure_form'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Rasa Core server is up and running on http://localhost:5005
+Circuit breaker tripped. Stopped predicting more actions for sender 'default'
+Circuit breaker tripped. Stopped predicting more actions for sender 'default'
+Circuit breaker tripped. Stopped predicting more actions for sender 'default'
+Circuit breaker tripped. Stopped predicting more actions for sender 'default'
+Circuit breaker tripped. Stopped predicting more actions for sender 'default'
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+Restoring parameters from models/nlu/default/current/intent_classifier_tensorflow_embedding.ckpt
+Rasa Core server is up and running on http://localhost:5005

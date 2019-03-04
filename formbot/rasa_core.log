@@ -1,0 +1,1907 @@
+Rasa process starting
+Rasa process starting
+Rasa process starting
+Rasa process starting
+Restoring parameters from models/nlu/current/intent_classifier_tensorflow_embedding.ckpt
+Available web server routes: 
+static                                             HEAD, OPTIONS, GET             /static/[filename]
+custom_webhook_CmdlineInput.health                 HEAD, OPTIONS, GET             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                POST, OPTIONS                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+Failed to connect to duckling http server. Make sure the duckling server is running and the proper host and port are set in the configuration. More information on how to run the server can be found on github: https://github.com/facebook/duckling#quickstart Error: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /parse (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fafdc9b3c88>: Failed to establish a new connection: [Errno 111] Connection refused',))
+Received user message 'hi' with intent '{'name': 'greet', 'confidence': 0.9436538219451904}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	cuisine: None
+	feedback: None
+	num_people: None
+	outdoor_seating: None
+	preferences: None
+	requested_slot: None
+Current tracker state [None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '11'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: Hello! I am restaurant search assistant! How can I help?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Restoring parameters from models/nlu/current/intent_classifier_tensorflow_embedding.ckpt
+Available web server routes: 
+static                                             HEAD, GET, OPTIONS             /static/[filename]
+custom_webhook_CmdlineInput.health                 HEAD, GET, OPTIONS             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                POST, OPTIONS                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+Failed to connect to duckling http server. Make sure the duckling server is running and the proper host and port are set in the configuration. More information on how to run the server can be found on github: https://github.com/facebook/duckling#quickstart Error: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /parse (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f2f7033d9b0>: Failed to establish a new connection: [Errno 111] Connection refused',))
+Received user message 'hi' with intent '{'name': 'greet', 'confidence': 0.9436538219451904}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	cuisine: None
+	feedback: None
+	num_people: None
+	outdoor_seating: None
+	preferences: None
+	requested_slot: None
+Current tracker state [None, None, None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '11'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: Hello! I am restaurant search assistant! How can I help?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Failed to connect to duckling http server. Make sure the duckling server is running and the proper host and port are set in the configuration. More information on how to run the server can be found on github: https://github.com/facebook/duckling#quickstart Error: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /parse (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f2f70b5d160>: Failed to establish a new connection: [Errno 111] Connection refused',))
+Received user message 'id like a restraunt' with intent '{'name': 'inform', 'confidence': 0.9200656414031982}' and entities '[]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+	cuisine: None
+	feedback: None
+	num_people: None
+	outdoor_seating: None
+	preferences: None
+	requested_slot: None
+Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_inform': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_1_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Action 'action_default_fallback' ended with events '['UserUtteranceReverted()']'
+Bot utterance 'BotUttered(text: sorry, I didn't understand you, please try input something else, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Failed to connect to duckling http server. Make sure the duckling server is running and the proper host and port are set in the configuration. More information on how to run the server can be found on github: https://github.com/facebook/duckling#quickstart Error: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /parse (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f2f70ab6dd8>: Failed to establish a new connection: [Errno 111] Connection refused',))
+Received user message 'im looking for a restaurant' with intent '{'name': 'request_restaurant', 'confidence': 0.9636378884315491}' and entities '[]'
+Logged UserUtterance - tracker now has 11 events
+Current slot values: 
+	cuisine: None
+	feedback: None
+	num_people: None
+	outdoor_seating: None
+	preferences: None
+	requested_slot: None
+Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_request_restaurant': 1.0}]
+There is a memorised next action '12'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'restaurant_form' with prob 1.00.
+Calling action endpoint to run action 'restaurant_form'.
+Action 'restaurant_form' ended with events '['Form(restaurant_form)', 'SlotSet(key: requested_slot, value: cuisine)']'
+Bot utterance 'BotUttered(text: what cuisine?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_request_restaurant': 1.0}]
+There is a memorised next action '12'
+There is an active form 'restaurant_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Failed to connect to duckling http server. Make sure the duckling server is running and the proper host and port are set in the configuration. More information on how to run the server can be found on github: https://github.com/facebook/duckling#quickstart Error: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /parse (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f2f722f34e0>: Failed to establish a new connection: [Errno 111] Connection refused',))
+Received user message 'indian' with intent '{'name': 'inform', 'confidence': 0.7404871582984924}' and entities '[{'start': 0, 'end': 6, 'value': 'indian', 'entity': 'cuisine', 'confidence': 0.8517042648433734, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 17 events
+Current slot values: 
+	cuisine: None
+	feedback: None
+	num_people: None
+	outdoor_seating: None
+	preferences: None
+	requested_slot: cuisine
+Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_request_restaurant': 1.0}]
+There is a memorised next action '12'
+There is an active form 'restaurant_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'restaurant_form' with prob 1.00.
+Calling action endpoint to run action 'restaurant_form'.
+Action 'restaurant_form' ended with events '['SlotSet(key: cuisine, value: indian)', 'SlotSet(key: requested_slot, value: num_people)']'
+Bot utterance 'BotUttered(text: how many people?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_request_restaurant': 1.0}]
+There is a memorised next action '12'
+There is an active form 'restaurant_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Failed to connect to duckling http server. Make sure the duckling server is running and the proper host and port are set in the configuration. More information on how to run the server can be found on github: https://github.com/facebook/duckling#quickstart Error: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /parse (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f2f721e1358>: Failed to establish a new connection: [Errno 111] Connection refused',))
+Received user message '4' with intent '{'name': 'inform', 'confidence': 0.8539876937866211}' and entities '[]'
+Logged UserUtterance - tracker now has 23 events
+Current slot values: 
+	cuisine: indian
+	feedback: None
+	num_people: None
+	outdoor_seating: None
+	preferences: None
+	requested_slot: num_people
+Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_request_restaurant': 1.0}]
+There is a memorised next action '12'
+There is an active form 'restaurant_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'restaurant_form' with prob 1.00.
+Calling action endpoint to run action 'restaurant_form'.
+Failed to validate slot num_people with action restaurant_form
+Current tracker state [{'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_request_restaurant': 1.0}, {'prev_restaurant_form': 1.0, 'intent_request_restaurant': 1.0, 'active_form_restaurant_form': 1.0}, {'prev_action_listen': 1.0, 'intent_inform': 1.0, 'active_form_restaurant_form': 1.0}]
+There is no memorised next action
+There is an active form 'restaurant_form'
+Predicted next action using policy_1_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Action 'action_default_fallback' ended with events '['UserUtteranceReverted()']'
+Bot utterance 'BotUttered(text: sorry, I didn't understand you, please try input something else, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_request_restaurant': 1.0}]
+There is a memorised next action '12'
+There is an active form 'restaurant_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '/restart' with intent '{'name': 'restart', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 29 events
+Current slot values: 
+	cuisine: indian
+	feedback: None
+	num_people: None
+	outdoor_seating: None
+	preferences: None
+	requested_slot: num_people
+Predicted next action 'action_restart' with prob 1.00.
+Action 'action_restart' ended with events '['Restarted()']'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Failed to connect to duckling http server. Make sure the duckling server is running and the proper host and port are set in the configuration. More information on how to run the server can be found on github: https://github.com/facebook/duckling#quickstart Error: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /parse (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f2f72a73278>: Failed to establish a new connection: [Errno 111] Connection refused',))
+Received user message 'I want a table for 4' with intent '{'name': 'request_restaurant', 'confidence': 0.9672569632530212}' and entities '[{'start': 19, 'end': 20, 'value': '4', 'entity': 'num_people', 'confidence': 0.8782544931542814, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 33 events
+Current slot values: 
+	cuisine: None
+	feedback: None
+	num_people: None
+	outdoor_seating: None
+	preferences: None
+	requested_slot: None
+Current tracker state [None, None, None, {}, {'prev_action_listen': 1.0, 'intent_request_restaurant': 1.0}]
+There is a memorised next action '12'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'restaurant_form' with prob 1.00.
+Calling action endpoint to run action 'restaurant_form'.
+Action 'restaurant_form' ended with events '['Form(restaurant_form)', 'SlotSet(key: num_people, value: 4)', 'SlotSet(key: requested_slot, value: cuisine)']'
+Bot utterance 'BotUttered(text: what cuisine?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, None, {}, {'prev_action_listen': 1.0, 'intent_request_restaurant': 1.0}]
+There is a memorised next action '12'
+There is an active form 'restaurant_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Failed to connect to duckling http server. Make sure the duckling server is running and the proper host and port are set in the configuration. More information on how to run the server can be found on github: https://github.com/facebook/duckling#quickstart Error: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /parse (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f2f729bf0f0>: Failed to establish a new connection: [Errno 111] Connection refused',))
+Received user message 'indian' with intent '{'name': 'inform', 'confidence': 0.7404871582984924}' and entities '[{'start': 0, 'end': 6, 'value': 'indian', 'entity': 'cuisine', 'confidence': 0.8517042648433734, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 40 events
+Current slot values: 
+	cuisine: None
+	feedback: None
+	num_people: 4
+	outdoor_seating: None
+	preferences: None
+	requested_slot: cuisine
+Current tracker state [None, None, None, {}, {'prev_action_listen': 1.0, 'intent_request_restaurant': 1.0}]
+There is a memorised next action '12'
+There is an active form 'restaurant_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'restaurant_form' with prob 1.00.
+Calling action endpoint to run action 'restaurant_form'.
+Action 'restaurant_form' ended with events '['SlotSet(key: cuisine, value: indian)', 'SlotSet(key: requested_slot, value: outdoor_seating)']'
+Bot utterance 'BotUttered(text: do you want to seat outside?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, None, {}, {'prev_action_listen': 1.0, 'intent_request_restaurant': 1.0}]
+There is a memorised next action '12'
+There is an active form 'restaurant_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Failed to connect to duckling http server. Make sure the duckling server is running and the proper host and port are set in the configuration. More information on how to run the server can be found on github: https://github.com/facebook/duckling#quickstart Error: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /parse (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f2f728ac3c8>: Failed to establish a new connection: [Errno 111] Connection refused',))
+Received user message 'yes' with intent '{'name': 'affirm', 'confidence': 0.9247283339500427}' and entities '[]'
+Logged UserUtterance - tracker now has 46 events
+Current slot values: 
+	cuisine: indian
+	feedback: None
+	num_people: 4
+	outdoor_seating: None
+	preferences: None
+	requested_slot: outdoor_seating
+Current tracker state [None, None, None, {}, {'prev_action_listen': 1.0, 'intent_request_restaurant': 1.0}]
+There is a memorised next action '12'
+There is an active form 'restaurant_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'restaurant_form' with prob 1.00.
+Calling action endpoint to run action 'restaurant_form'.
+Action 'restaurant_form' ended with events '['SlotSet(key: outdoor_seating, value: True)', 'SlotSet(key: requested_slot, value: preferences)']'
+Bot utterance 'BotUttered(text: please provide additional preferences, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, None, {}, {'prev_action_listen': 1.0, 'intent_request_restaurant': 1.0}]
+There is a memorised next action '12'
+There is an active form 'restaurant_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Failed to connect to duckling http server. Make sure the duckling server is running and the proper host and port are set in the configuration. More information on how to run the server can be found on github: https://github.com/facebook/duckling#quickstart Error: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /parse (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f2f7279f198>: Failed to establish a new connection: [Errno 111] Connection refused',))
+Received user message 'nothing' with intent '{'name': 'stop', 'confidence': 0.8623521327972412}' and entities '[]'
+Logged UserUtterance - tracker now has 52 events
+Current slot values: 
+	cuisine: indian
+	feedback: None
+	num_people: 4
+	outdoor_seating: True
+	preferences: None
+	requested_slot: preferences
+Current tracker state [None, None, None, {}, {'prev_action_listen': 1.0, 'intent_request_restaurant': 1.0}]
+There is a memorised next action '12'
+There is an active form 'restaurant_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'restaurant_form' with prob 1.00.
+Calling action endpoint to run action 'restaurant_form'.
+Action 'restaurant_form' ended with events '['SlotSet(key: preferences, value: nothing)', 'SlotSet(key: requested_slot, value: feedback)']'
+Bot utterance 'BotUttered(text: please give your feedback on your experience so far, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, None, {}, {'prev_action_listen': 1.0, 'intent_request_restaurant': 1.0}]
+There is a memorised next action '12'
+There is an active form 'restaurant_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Failed to connect to duckling http server. Make sure the duckling server is running and the proper host and port are set in the configuration. More information on how to run the server can be found on github: https://github.com/facebook/duckling#quickstart Error: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /parse (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f2f72687198>: Failed to establish a new connection: [Errno 111] Connection refused',))
+Received user message 'its good' with intent '{'name': 'greet', 'confidence': 0.7751810550689697}' and entities '[]'
+Logged UserUtterance - tracker now has 58 events
+Current slot values: 
+	cuisine: indian
+	feedback: None
+	num_people: 4
+	outdoor_seating: True
+	preferences: nothing
+	requested_slot: feedback
+Current tracker state [None, None, None, {}, {'prev_action_listen': 1.0, 'intent_request_restaurant': 1.0}]
+There is a memorised next action '12'
+There is an active form 'restaurant_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'restaurant_form' with prob 1.00.
+Calling action endpoint to run action 'restaurant_form'.
+Action 'restaurant_form' ended with events '['SlotSet(key: feedback, value: its good)', 'Form(None)', 'SlotSet(key: requested_slot, value: None)']'
+Bot utterance 'BotUttered(text: All done!, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, {}, {'prev_action_listen': 1.0, 'intent_request_restaurant': 1.0}, {'prev_restaurant_form': 1.0, 'intent_request_restaurant': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 0.35.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Restoring parameters from models/nlu/current/intent_classifier_tensorflow_embedding.ckpt
+Available web server routes: 
+static                                             HEAD, OPTIONS, GET             /static/[filename]
+custom_webhook_CmdlineInput.health                 HEAD, OPTIONS, GET             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                POST, OPTIONS                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+Failed to connect to duckling http server. Make sure the duckling server is running and the proper host and port are set in the configuration. More information on how to run the server can be found on github: https://github.com/facebook/duckling#quickstart Error: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /parse (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f2c7c7b02b0>: Failed to establish a new connection: [Errno 111] Connection refused',))
+Received user message 'hi' with intent '{'name': 'greet', 'confidence': 0.9772250056266785}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	account: None
+	accounttype: None
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: None
+Current tracker state [None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '11'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Failed to connect to duckling http server. Make sure the duckling server is running and the proper host and port are set in the configuration. More information on how to run the server can be found on github: https://github.com/facebook/duckling#quickstart Error: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /parse (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f2c7c6bf7b8>: Failed to establish a new connection: [Errno 111] Connection refused',))
+Received user message 'open new account' with intent '{'name': 'open_account', 'confidence': 0.9643701314926147}' and entities '[{'start': 5, 'end': 8, 'value': 'new', 'entity': 'account', 'confidence': 0.7188103232057842, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+	account: None
+	accounttype: None
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: None
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_open_account': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '12'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'account_form' with prob 1.00.
+Calling action endpoint to run action 'account_form'.
+Failed to run custom action 'account_form'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'account_form'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "/home/nitesh/env/lib/python3.6/site-packages/rasa_core/actions/action.py", line 342, in run
+    response.raise_for_status()
+  File "/home/nitesh/env/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nitesh/env/lib/python3.6/site-packages/rasa_core/processor.py", line 346, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/home/nitesh/env/lib/python3.6/site-packages/rasa_core/actions/action.py", line 362, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'account_form' ended with events '[]'
+Current tracker state [{}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_open_account': 1.0, 'prev_action_listen': 1.0}, {'intent_open_account': 1.0, 'prev_account_form': 1.0}]
+There is a memorised next action '7'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'utter_slots_values' with prob 1.00.
+Action 'utter_slots_values' ended with events '[]'
+Bot utterance 'BotUttered(text: I am going to query with following parameters:
+ - account: None
+ - account type: None
+ - Product type: None
+ - Adjustment Type: None
+ - feedback: None, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_open_account': 1.0, 'prev_action_listen': 1.0}, {'intent_open_account': 1.0, 'prev_account_form': 1.0}, {'prev_utter_slots_values': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Restoring parameters from models/nlu/current/intent_classifier_tensorflow_embedding.ckpt
+Available web server routes: 
+static                                             OPTIONS, HEAD, GET             /static/[filename]
+custom_webhook_CmdlineInput.health                 OPTIONS, HEAD, GET             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                POST, OPTIONS                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+Received user message 'hi' with intent '{'name': 'greet', 'confidence': 0.9772250056266785}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	account: None
+	accounttype: None
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: None
+Current tracker state [None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '11'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'open new account' with intent '{'name': 'open_account', 'confidence': 0.9643701314926147}' and entities '[{'start': 5, 'end': 8, 'value': 'new', 'entity': 'account', 'confidence': 0.7188103232057842, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+	account: None
+	accounttype: None
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: None
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_open_account': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '12'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'account_form' with prob 1.00.
+Calling action endpoint to run action 'account_form'.
+Failed to run custom action 'account_form'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'account_form'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "/home/nitesh/env/lib/python3.6/site-packages/rasa_core/actions/action.py", line 342, in run
+    response.raise_for_status()
+  File "/home/nitesh/env/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nitesh/env/lib/python3.6/site-packages/rasa_core/processor.py", line 346, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/home/nitesh/env/lib/python3.6/site-packages/rasa_core/actions/action.py", line 362, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'account_form' ended with events '[]'
+Current tracker state [{}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_open_account': 1.0, 'prev_action_listen': 1.0}, {'prev_account_form': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '7'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'utter_slots_values' with prob 1.00.
+Action 'utter_slots_values' ended with events '[]'
+Bot utterance 'BotUttered(text: I am going to query with following parameters:
+ - account: None
+ - account type: None
+ - Product type: None
+ - Adjustment Type: None
+ - feedback: None, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_open_account': 1.0, 'prev_action_listen': 1.0}, {'prev_account_form': 1.0, 'intent_open_account': 1.0}, {'intent_open_account': 1.0, 'prev_utter_slots_values': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Restoring parameters from models/nlu/current/intent_classifier_tensorflow_embedding.ckpt
+Available web server routes: 
+static                                             GET, HEAD, OPTIONS             /static/[filename]
+custom_webhook_CmdlineInput.health                 GET, HEAD, OPTIONS             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                POST, OPTIONS                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+Received user message 'hi' with intent '{'name': 'greet', 'confidence': 0.9772250056266785}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	account: None
+	accounttype: None
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: None
+Current tracker state [None, None, None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '11'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'open a new account please' with intent '{'name': 'open_account', 'confidence': 0.9794588088989258}' and entities '[]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+	account: None
+	accounttype: None
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: None
+Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_open_account': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '12'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'account_form' with prob 1.00.
+Calling action endpoint to run action 'account_form'.
+Failed to run custom action 'account_form'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'account_form'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "/home/nitesh/env/lib/python3.6/site-packages/rasa_core/actions/action.py", line 342, in run
+    response.raise_for_status()
+  File "/home/nitesh/env/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nitesh/env/lib/python3.6/site-packages/rasa_core/processor.py", line 346, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/home/nitesh/env/lib/python3.6/site-packages/rasa_core/actions/action.py", line 362, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'account_form' ended with events '[]'
+Current tracker state [{}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_open_account': 1.0, 'prev_action_listen': 1.0}, {'prev_account_form': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '7'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'utter_slots_values' with prob 1.00.
+Action 'utter_slots_values' ended with events '[]'
+Bot utterance 'BotUttered(text: I am going to query with following parameters:
+ - account: None
+ - account type: None
+ - Product type: None
+ - Adjustment Type: None
+ - feedback: None, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_open_account': 1.0, 'prev_action_listen': 1.0}, {'prev_account_form': 1.0, 'intent_open_account': 1.0}, {'intent_open_account': 1.0, 'prev_utter_slots_values': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Restoring parameters from models/nlu/current/intent_classifier_tensorflow_embedding.ckpt
+Available web server routes: 
+static                                             OPTIONS, HEAD, GET             /static/[filename]
+custom_webhook_CmdlineInput.health                 OPTIONS, HEAD, GET             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                OPTIONS, POST                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+Received user message 'hi' with intent '{'name': 'greet', 'confidence': 0.9772250056266785}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	account: None
+	accounttype: None
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: None
+Current tracker state [None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '11'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'open a new account please' with intent '{'name': 'open_account', 'confidence': 0.9794588088989258}' and entities '[]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+	account: None
+	accounttype: None
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: None
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '12'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'account_form' with prob 1.00.
+Calling action endpoint to run action 'account_form'.
+Failed to run custom action 'account_form'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'account_form'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "/home/nitesh/env/lib/python3.6/site-packages/rasa_core/actions/action.py", line 342, in run
+    response.raise_for_status()
+  File "/home/nitesh/env/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nitesh/env/lib/python3.6/site-packages/rasa_core/processor.py", line 346, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/home/nitesh/env/lib/python3.6/site-packages/rasa_core/actions/action.py", line 362, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'account_form' ended with events '[]'
+Current tracker state [{}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}, {'prev_account_form': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '7'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'utter_slots_values' with prob 1.00.
+Action 'utter_slots_values' ended with events '[]'
+Bot utterance 'BotUttered(text: I am going to query with following parameters:
+ - account: None
+ - account type: None
+ - Product type: None
+ - Adjustment Type: None
+ - feedback: None, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}, {'prev_account_form': 1.0, 'intent_open_account': 1.0}, {'prev_utter_slots_values': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '/restart' with intent '{'name': 'restart', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 11 events
+Current slot values: 
+	account: None
+	accounttype: None
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: None
+Predicted next action 'action_restart' with prob 1.00.
+Action 'action_restart' ended with events '['Restarted()']'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Restoring parameters from models/nlu/current/intent_classifier_tensorflow_embedding.ckpt
+Available web server routes: 
+static                                             OPTIONS, GET, HEAD             /static/[filename]
+custom_webhook_CmdlineInput.health                 OPTIONS, GET, HEAD             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                OPTIONS, POST                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+Received user message 'hi' with intent '{'name': 'greet', 'confidence': 0.9779794216156006}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	account: None
+	accounttype: None
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: None
+Current tracker state [None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '11'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'open a new account please' with intent '{'name': 'open_account', 'confidence': 0.9772384166717529}' and entities '[]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+	account: None
+	accounttype: None
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: None
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_open_account': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '12'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'account_form' with prob 1.00.
+Calling action endpoint to run action 'account_form'.
+Failed to run custom action 'account_form'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'account_form'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "/home/nitesh/env/lib/python3.6/site-packages/rasa_core/actions/action.py", line 342, in run
+    response.raise_for_status()
+  File "/home/nitesh/env/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nitesh/env/lib/python3.6/site-packages/rasa_core/processor.py", line 346, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/home/nitesh/env/lib/python3.6/site-packages/rasa_core/actions/action.py", line 362, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'account_form' ended with events '[]'
+Current tracker state [{}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_open_account': 1.0, 'prev_action_listen': 1.0}, {'intent_open_account': 1.0, 'prev_account_form': 1.0}]
+There is a memorised next action '7'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'utter_slots_values' with prob 1.00.
+Action 'utter_slots_values' ended with events '[]'
+Bot utterance 'BotUttered(text: I am going to query with following parameters:
+ - account: None
+ - account type: None
+ - Product type: None
+ - Adjustment Type: None
+ - feedback: None, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_open_account': 1.0, 'prev_action_listen': 1.0}, {'intent_open_account': 1.0, 'prev_account_form': 1.0}, {'intent_open_account': 1.0, 'prev_utter_slots_values': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Restoring parameters from models/nlu/current/intent_classifier_tensorflow_embedding.ckpt
+Available web server routes: 
+static                                             HEAD, OPTIONS, GET             /static/[filename]
+custom_webhook_CmdlineInput.health                 HEAD, OPTIONS, GET             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                POST, OPTIONS                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+Received user message 'hi' with intent '{'name': 'greet', 'confidence': 0.9595076441764832}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	account: None
+	accounttype: None
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: None
+Current tracker state [None, None, None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '11'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'open a new account' with intent '{'name': 'open_account', 'confidence': 0.8575383424758911}' and entities '[]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+	account: None
+	accounttype: None
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: None
+Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '12'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'account_form' with prob 1.00.
+Calling action endpoint to run action 'account_form'.
+Failed to run custom action 'account_form'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'account_form'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "/home/nitesh/env/lib/python3.6/site-packages/rasa_core/actions/action.py", line 342, in run
+    response.raise_for_status()
+  File "/home/nitesh/env/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nitesh/env/lib/python3.6/site-packages/rasa_core/processor.py", line 346, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/home/nitesh/env/lib/python3.6/site-packages/rasa_core/actions/action.py", line 362, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'account_form' ended with events '[]'
+Current tracker state [{}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}, {'prev_account_form': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '7'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'utter_slots_values' with prob 1.00.
+Action 'utter_slots_values' ended with events '[]'
+Bot utterance 'BotUttered(text: I am going to query with following parameters:
+ - account: None
+ - account type: None
+ - Product type: None
+ - Adjustment Type: None
+ - feedback: None, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}, {'prev_account_form': 1.0, 'intent_open_account': 1.0}, {'prev_utter_slots_values': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '/restart' with intent '{'name': 'restart', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 11 events
+Current slot values: 
+	account: None
+	accounttype: None
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: None
+Predicted next action 'action_restart' with prob 1.00.
+Action 'action_restart' ended with events '['Restarted()']'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'hi' with intent '{'name': 'greet', 'confidence': 0.9595076441764832}' and entities '[]'
+Logged UserUtterance - tracker now has 15 events
+Current slot values: 
+	account: None
+	accounttype: None
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: None
+Current tracker state [None, None, None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '11'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'open a new account' with intent '{'name': 'open_account', 'confidence': 0.8575383424758911}' and entities '[]'
+Logged UserUtterance - tracker now has 19 events
+Current slot values: 
+	account: None
+	accounttype: None
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: None
+Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '12'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'account_form' with prob 1.00.
+Calling action endpoint to run action 'account_form'.
+Failed to run custom action 'account_form'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'account_form'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "/home/nitesh/env/lib/python3.6/site-packages/rasa_core/actions/action.py", line 342, in run
+    response.raise_for_status()
+  File "/home/nitesh/env/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nitesh/env/lib/python3.6/site-packages/rasa_core/processor.py", line 346, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/home/nitesh/env/lib/python3.6/site-packages/rasa_core/actions/action.py", line 362, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'account_form' ended with events '[]'
+Current tracker state [{}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}, {'prev_account_form': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '7'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'utter_slots_values' with prob 1.00.
+Action 'utter_slots_values' ended with events '[]'
+Bot utterance 'BotUttered(text: I am going to query with following parameters:
+ - account: None
+ - account type: None
+ - Product type: None
+ - Adjustment Type: None
+ - feedback: None, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}, {'prev_account_form': 1.0, 'intent_open_account': 1.0}, {'prev_utter_slots_values': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Restoring parameters from models/nlu/current/intent_classifier_tensorflow_embedding.ckpt
+Available web server routes: 
+static                                             HEAD, GET, OPTIONS             /static/[filename]
+custom_webhook_CmdlineInput.health                 HEAD, GET, OPTIONS             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                POST, OPTIONS                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+Received user message 'hi' with intent '{'name': 'greet', 'confidence': 0.9529432058334351}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	account: None
+	accounttype: None
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: None
+Current tracker state [None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '11'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '/restart' with intent '{'name': 'restart', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+	account: None
+	accounttype: None
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: None
+Predicted next action 'action_restart' with prob 1.00.
+Action 'action_restart' ended with events '['Restarted()']'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'hi' with intent '{'name': 'greet', 'confidence': 0.9529432058334351}' and entities '[]'
+Logged UserUtterance - tracker now has 10 events
+Current slot values: 
+	account: None
+	accounttype: None
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: None
+Current tracker state [None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '11'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'open a new account' with intent '{'name': 'open_account', 'confidence': 0.9673388004302979}' and entities '[]'
+Logged UserUtterance - tracker now has 14 events
+Current slot values: 
+	account: None
+	accounttype: None
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: None
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '12'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'account_form' with prob 1.00.
+Calling action endpoint to run action 'account_form'.
+Failed to run custom action 'account_form'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'account_form'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "/home/nitesh/env/lib/python3.6/site-packages/rasa_core/actions/action.py", line 342, in run
+    response.raise_for_status()
+  File "/home/nitesh/env/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nitesh/env/lib/python3.6/site-packages/rasa_core/processor.py", line 346, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/home/nitesh/env/lib/python3.6/site-packages/rasa_core/actions/action.py", line 362, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'account_form' ended with events '[]'
+Current tracker state [{}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}, {'prev_account_form': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '7'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'utter_slots_values' with prob 1.00.
+Action 'utter_slots_values' ended with events '[]'
+Bot utterance 'BotUttered(text: I am going to query with following parameters:
+ - account: None
+ - account type: None
+ - Product type: None
+ - Adjustment Type: None
+ - feedback: None, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}, {'prev_account_form': 1.0, 'intent_open_account': 1.0}, {'prev_utter_slots_values': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '/restart' with intent '{'name': 'restart', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 19 events
+Current slot values: 
+	account: None
+	accounttype: None
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: None
+Predicted next action 'action_restart' with prob 1.00.
+Action 'action_restart' ended with events '['Restarted()']'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Restoring parameters from models/nlu/current/intent_classifier_tensorflow_embedding.ckpt
+Available web server routes: 
+static                                             OPTIONS, GET, HEAD             /static/[filename]
+custom_webhook_CmdlineInput.health                 OPTIONS, GET, HEAD             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                OPTIONS, POST                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+Received user message 'open a new account please' with intent '{'name': 'open_account', 'confidence': 0.9736441373825073}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	account: None
+	accounttype: None
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: None
+Current tracker state [None, None, None, {}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '12'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'account_form' with prob 1.00.
+Calling action endpoint to run action 'account_form'.
+Failed to run custom action 'account_form'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'account_form'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "/home/nitesh/env/lib/python3.6/site-packages/rasa_core/actions/action.py", line 342, in run
+    response.raise_for_status()
+  File "/home/nitesh/env/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nitesh/env/lib/python3.6/site-packages/rasa_core/processor.py", line 346, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/home/nitesh/env/lib/python3.6/site-packages/rasa_core/actions/action.py", line 362, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'account_form' ended with events '[]'
+Current tracker state [None, None, {}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}, {'prev_account_form': 1.0, 'intent_open_account': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 0.38.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Restoring parameters from models/nlu/current/intent_classifier_tensorflow_embedding.ckpt
+Available web server routes: 
+static                                             GET, OPTIONS, HEAD             /static/[filename]
+custom_webhook_CmdlineInput.health                 GET, OPTIONS, HEAD             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                OPTIONS, POST                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+Received user message 'hi' with intent '{'name': 'greet', 'confidence': 0.9529432058334351}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	account: None
+	accounttype: None
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: None
+Current tracker state [None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '11'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'open a new account please' with intent '{'name': 'open_account', 'confidence': 0.9736441373825073}' and entities '[]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+	account: None
+	accounttype: None
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: None
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_open_account': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '12'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'account_form' with prob 1.00.
+Calling action endpoint to run action 'account_form'.
+Action 'account_form' ended with events '['Form(account_form)', 'SlotSet(key: requested_slot, value: account)']'
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_open_account': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '12'
+There is an active form 'account_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'trade account for advisory' with intent '{'name': 'open_account', 'confidence': 0.9715428352355957}' and entities '[{'start': 0, 'end': 5, 'value': 'trade', 'entity': 'account', 'confidence': 0.9399184281399582, 'extractor': 'ner_crf'}, {'start': 18, 'end': 26, 'value': 'advisory', 'entity': 'accounttype', 'confidence': 0.9450143043341065, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 11 events
+Current slot values: 
+	account: None
+	accounttype: None
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: account
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_open_account': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '12'
+There is an active form 'account_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'account_form' with prob 1.00.
+Calling action endpoint to run action 'account_form'.
+Action 'account_form' ended with events '['SlotSet(key: accounttype, value: advisory)', 'SlotSet(key: account, value: trade)', 'SlotSet(key: requested_slot, value: producttype)']'
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_open_account': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '12'
+There is an active form 'account_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'mutual funds benefits' with intent '{'name': 'inform', 'confidence': 0.9568182229995728}' and entities '[{'start': 0, 'end': 6, 'value': 'mutual', 'entity': 'producttype', 'confidence': 0.656193634029914, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 17 events
+Current slot values: 
+	account: trade
+	accounttype: advisory
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: producttype
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_open_account': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '12'
+There is an active form 'account_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'account_form' with prob 1.00.
+Calling action endpoint to run action 'account_form'.
+Action 'account_form' ended with events '['SlotSet(key: producttype, value: mutual)', 'SlotSet(key: requested_slot, value: adjustmenttype)']'
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_open_account': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '12'
+There is an active form 'account_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'I prefer account type change' with intent '{'name': 'inform', 'confidence': 0.9731967449188232}' and entities '[{'start': 9, 'end': 28, 'value': 'account type change', 'entity': 'adjustmenttype', 'confidence': 0.9227791999438731, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 22 events
+Current slot values: 
+	account: trade
+	accounttype: advisory
+	adjustmenttype: None
+	feedback: None
+	producttype: mutual
+	requested_slot: adjustmenttype
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_open_account': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '12'
+There is an active form 'account_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'account_form' with prob 1.00.
+Calling action endpoint to run action 'account_form'.
+Action 'account_form' ended with events '['SlotSet(key: adjustmenttype, value: account type change)', 'SlotSet(key: requested_slot, value: feedback)']'
+Bot utterance 'BotUttered(text: please give your feedback on your experience so far, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_open_account': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '12'
+There is an active form 'account_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'its good' with intent '{'name': 'affirm', 'confidence': 0.9256476163864136}' and entities '[]'
+Logged UserUtterance - tracker now has 28 events
+Current slot values: 
+	account: trade
+	accounttype: advisory
+	adjustmenttype: account type change
+	feedback: None
+	producttype: mutual
+	requested_slot: feedback
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_open_account': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '12'
+There is an active form 'account_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'account_form' with prob 1.00.
+Calling action endpoint to run action 'account_form'.
+Action 'account_form' ended with events '['SlotSet(key: feedback, value: its good)', 'Form(None)', 'SlotSet(key: requested_slot, value: None)']'
+Bot utterance 'BotUttered(text: All done!, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_open_account': 1.0, 'prev_action_listen': 1.0}, {'prev_account_form': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '7'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'utter_slots_values' with prob 1.00.
+Action 'utter_slots_values' ended with events '[]'
+Bot utterance 'BotUttered(text: I am going to query with following parameters:
+ - account: trade
+ - account type: advisory
+ - Product type: mutual
+ - Adjustment Type: account type change
+ - feedback: its good, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_open_account': 1.0, 'prev_action_listen': 1.0}, {'prev_account_form': 1.0, 'intent_open_account': 1.0}, {'intent_open_account': 1.0, 'prev_utter_slots_values': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Restoring parameters from models/nlu/current/intent_classifier_tensorflow_embedding.ckpt
+Available web server routes: 
+static                                             GET, OPTIONS, HEAD             /static/[filename]
+custom_webhook_CmdlineInput.health                 GET, OPTIONS, HEAD             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                POST, OPTIONS                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+Received user message 'hi' with intent '{'name': 'greet', 'confidence': 0.9753141403198242}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	account: None
+	accounttype: None
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: None
+Current tracker state [None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '11'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'open a new account please' with intent '{'name': 'open_account', 'confidence': 0.9670146107673645}' and entities '[]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+	account: None
+	accounttype: None
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: None
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '12'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'account_form' with prob 1.00.
+Calling action endpoint to run action 'account_form'.
+Action 'account_form' ended with events '['Form(account_form)', 'SlotSet(key: requested_slot, value: account)']'
+Bot utterance 'BotUttered(text: what account?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '12'
+There is an active form 'account_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'trust account' with intent '{'name': 'inform', 'confidence': 0.984926700592041}' and entities '[{'start': 0, 'end': 5, 'value': 'trust', 'entity': 'account', 'confidence': 0.9836558074409261, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 12 events
+Current slot values: 
+	account: None
+	accounttype: None
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: account
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '12'
+There is an active form 'account_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'account_form' with prob 1.00.
+Calling action endpoint to run action 'account_form'.
+Action 'account_form' ended with events '['SlotSet(key: account, value: trust)', 'SlotSet(key: requested_slot, value: accounttype)']'
+Bot utterance 'BotUttered(text: what account type?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '12'
+There is an active form 'account_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'how about trust account' with intent '{'name': 'inform', 'confidence': 0.9837967157363892}' and entities '[{'start': 10, 'end': 15, 'value': 'trust', 'entity': 'account', 'confidence': 0.9958233439431725, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 18 events
+Current slot values: 
+	account: trust
+	accounttype: None
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: accounttype
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '12'
+There is an active form 'account_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'account_form' with prob 1.00.
+Calling action endpoint to run action 'account_form'.
+Action 'account_form' ended with events '['SlotSet(key: account, value: trust)', 'SlotSet(key: accounttype, value: None)', 'SlotSet(key: requested_slot, value: accounttype)']'
+Bot utterance 'BotUttered(text: wrong account type, please try again, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Bot utterance 'BotUttered(text: what account type?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '12'
+There is an active form 'account_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'trade account' with intent '{'name': 'inform', 'confidence': 0.9825479388237}' and entities '[{'start': 0, 'end': 5, 'value': 'trade', 'entity': 'account', 'confidence': 0.9392753337178595, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 26 events
+Current slot values: 
+	account: trust
+	accounttype: None
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: accounttype
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '12'
+There is an active form 'account_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'account_form' with prob 1.00.
+Calling action endpoint to run action 'account_form'.
+Action 'account_form' ended with events '['SlotSet(key: account, value: trade)', 'SlotSet(key: accounttype, value: None)', 'SlotSet(key: requested_slot, value: accounttype)']'
+Bot utterance 'BotUttered(text: wrong account type, please try again, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Bot utterance 'BotUttered(text: what account type?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '12'
+There is an active form 'account_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Restoring parameters from models/nlu/current/intent_classifier_tensorflow_embedding.ckpt
+Available web server routes: 
+static                                             GET, HEAD, OPTIONS             /static/[filename]
+custom_webhook_CmdlineInput.health                 GET, HEAD, OPTIONS             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                POST, OPTIONS                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+Received user message 'hi' with intent '{'name': 'greet', 'confidence': 0.9753141403198242}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	account: None
+	accounttype: None
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: None
+Current tracker state [None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '11'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'open a new account' with intent '{'name': 'open_account', 'confidence': 0.9562091827392578}' and entities '[]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+	account: None
+	accounttype: None
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: None
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_open_account': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '12'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'account_form' with prob 1.00.
+Calling action endpoint to run action 'account_form'.
+Action 'account_form' ended with events '['Form(account_form)', 'SlotSet(key: requested_slot, value: account)']'
+Bot utterance 'BotUttered(text: what account?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_open_account': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '12'
+There is an active form 'account_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'how about trust' with intent '{'name': 'inform', 'confidence': 0.9768794178962708}' and entities '[{'start': 10, 'end': 15, 'value': 'trust', 'entity': 'account', 'confidence': 0.9807928998628209, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 12 events
+Current slot values: 
+	account: None
+	accounttype: None
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: account
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_open_account': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '12'
+There is an active form 'account_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'account_form' with prob 1.00.
+Calling action endpoint to run action 'account_form'.
+Action 'account_form' ended with events '['SlotSet(key: account, value: trust)', 'SlotSet(key: requested_slot, value: accounttype)']'
+Bot utterance 'BotUttered(text: what account type?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_open_account': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '12'
+There is an active form 'account_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'any trade account' with intent '{'name': 'inform', 'confidence': 0.9828248620033264}' and entities '[{'start': 4, 'end': 9, 'value': 'trade', 'entity': 'account', 'confidence': 0.9216385905763836, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 18 events
+Current slot values: 
+	account: trust
+	accounttype: None
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: accounttype
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_open_account': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '12'
+There is an active form 'account_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'account_form' with prob 1.00.
+Calling action endpoint to run action 'account_form'.
+Action 'account_form' ended with events '['SlotSet(key: account, value: trade)', 'SlotSet(key: accounttype, value: None)', 'SlotSet(key: requested_slot, value: accounttype)']'
+Bot utterance 'BotUttered(text: wrong account type, please try again, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Bot utterance 'BotUttered(text: what account type?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_open_account': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '12'
+There is an active form 'account_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Restoring parameters from models/nlu/current/intent_classifier_tensorflow_embedding.ckpt
+Available web server routes: 
+static                                             HEAD, GET, OPTIONS             /static/[filename]
+custom_webhook_CmdlineInput.health                 HEAD, GET, OPTIONS             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                POST, OPTIONS                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+Received user message 'hi' with intent '{'name': 'greet', 'confidence': 0.9747307300567627}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	account: None
+	accounttype: None
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: None
+Current tracker state [None, None, None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '11'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'open a new account' with intent '{'name': 'open_account', 'confidence': 0.9622266888618469}' and entities '[]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+	account: None
+	accounttype: None
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: None
+Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '12'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'account_form' with prob 1.00.
+Calling action endpoint to run action 'account_form'.
+Action 'account_form' ended with events '['Form(account_form)', 'SlotSet(key: requested_slot, value: account)']'
+Bot utterance 'BotUttered(text: what account?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '12'
+There is an active form 'account_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'trade account' with intent '{'name': 'inform', 'confidence': 0.9447307586669922}' and entities '[{'start': 0, 'end': 5, 'value': 'trade', 'entity': 'account', 'confidence': 0.9522396273248876, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 12 events
+Current slot values: 
+	account: None
+	accounttype: None
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: account
+Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '12'
+There is an active form 'account_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'account_form' with prob 1.00.
+Calling action endpoint to run action 'account_form'.
+Action 'account_form' ended with events '['SlotSet(key: account, value: trade)', 'SlotSet(key: requested_slot, value: accounttype)']'
+Bot utterance 'BotUttered(text: what account type?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '12'
+There is an active form 'account_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'trust account for advisory' with intent '{'name': 'open_account', 'confidence': 0.9527330994606018}' and entities '[{'start': 0, 'end': 5, 'value': 'trust', 'entity': 'account', 'confidence': 0.9771168110807432, 'extractor': 'ner_crf'}, {'start': 18, 'end': 26, 'value': 'advisory', 'entity': 'accounttype', 'confidence': 0.9438243861530192, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 18 events
+Current slot values: 
+	account: trade
+	accounttype: None
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: accounttype
+Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '12'
+There is an active form 'account_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'account_form' with prob 1.00.
+Calling action endpoint to run action 'account_form'.
+Action 'account_form' ended with events '['SlotSet(key: account, value: trust)', 'SlotSet(key: accounttype, value: advisory)', 'SlotSet(key: requested_slot, value: producttype)']'
+Bot utterance 'BotUttered(text: what product type it is for?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '12'
+There is an active form 'account_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'equity' with intent '{'name': 'inform', 'confidence': 0.8114352822303772}' and entities '[]'
+Logged UserUtterance - tracker now has 25 events
+Current slot values: 
+	account: trust
+	accounttype: advisory
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: producttype
+Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '12'
+There is an active form 'account_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'account_form' with prob 1.00.
+Calling action endpoint to run action 'account_form'.
+Action 'account_form' ended with events '['SlotSet(key: producttype, value: equity)', 'SlotSet(key: requested_slot, value: adjustmenttype)']'
+Bot utterance 'BotUttered(text: What adjustment type?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '12'
+There is an active form 'account_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'account type change' with intent '{'name': 'inform', 'confidence': 0.9659026861190796}' and entities '[{'start': 0, 'end': 19, 'value': 'account type change', 'entity': 'adjustmenttype', 'confidence': 0.9270866970237479, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 31 events
+Current slot values: 
+	account: trust
+	accounttype: advisory
+	adjustmenttype: None
+	feedback: None
+	producttype: equity
+	requested_slot: adjustmenttype
+Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '12'
+There is an active form 'account_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'account_form' with prob 1.00.
+Calling action endpoint to run action 'account_form'.
+Action 'account_form' ended with events '['SlotSet(key: adjustmenttype, value: account type change)', 'SlotSet(key: requested_slot, value: feedback)']'
+Bot utterance 'BotUttered(text: please give your feedback on your experience so far, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '12'
+There is an active form 'account_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'its great' with intent '{'name': 'affirm', 'confidence': 0.6621526479721069}' and entities '[]'
+Logged UserUtterance - tracker now has 37 events
+Current slot values: 
+	account: trust
+	accounttype: advisory
+	adjustmenttype: account type change
+	feedback: None
+	producttype: equity
+	requested_slot: feedback
+Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '12'
+There is an active form 'account_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'account_form' with prob 1.00.
+Calling action endpoint to run action 'account_form'.
+Action 'account_form' ended with events '['SlotSet(key: feedback, value: its great)', 'Form(None)', 'SlotSet(key: requested_slot, value: None)']'
+Bot utterance 'BotUttered(text: All done!, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}, {'prev_account_form': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '7'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'utter_slots_values' with prob 1.00.
+Action 'utter_slots_values' ended with events '[]'
+Bot utterance 'BotUttered(text: I am going to query with following parameters:
+ - account: trust
+ - account type: advisory
+ - Product type: equity
+ - Adjustment Type: account type change
+ - feedback: its great, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}, {'prev_account_form': 1.0, 'intent_open_account': 1.0}, {'prev_utter_slots_values': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '/thanks' with intent '{'name': 'thanks', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 46 events
+Current slot values: 
+	account: trust
+	accounttype: advisory
+	adjustmenttype: account type change
+	feedback: its great
+	producttype: equity
+	requested_slot: None
+Feature 'intent_thanks' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}, {'prev_account_form': 1.0, 'intent_open_account': 1.0}, {'prev_utter_slots_values': 1.0, 'intent_open_account': 1.0}, {'intent_thanks': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_1_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Action 'action_default_fallback' ended with events '['UserUtteranceReverted()']'
+Bot utterance 'BotUttered(text: sorry, I didn't understand you, please try input something else, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}, {'prev_account_form': 1.0, 'intent_open_account': 1.0}, {'prev_utter_slots_values': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'

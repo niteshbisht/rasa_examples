@@ -1,0 +1,7 @@
+## story_00914561
+* greet
+ - utter_ask_howcanhelp
+* inform{"useraction":"open account"}
+ - utter_ask_accounttype
+* unaware
+ - utter_ack_dosearch

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/fast_bot/fast_bot.iml" filepath="$PROJECT_DIR$/fast_bot/fast_bot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/formbot/formbot.iml" filepath="$PROJECT_DIR$/formbot/formbot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/formbot_basic/formbot_basic.iml" filepath="$PROJECT_DIR$/formbot_basic/formbot_basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/old_dev/old_dev.iml" filepath="$PROJECT_DIR$/old_dev/old_dev.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rasa_getting_started.iml" filepath="$PROJECT_DIR$/rasa_getting_started.iml" />
+      <module fileurl="file://$PROJECT_DIR$/restaurantbot/restaurantbot.iml" filepath="$PROJECT_DIR$/restaurantbot/restaurantbot.iml" />
+    </modules>
+  </component>
+</project>

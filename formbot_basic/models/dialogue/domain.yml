@@ -1,0 +1,93 @@
+%YAML 1.1
+---
+actions:
+- utter_slots_values
+- utter_noworries
+- utter_chitchat
+- utter_ask_continue
+- utter_greet
+config:
+  store_entities_as_slots: true
+entities:
+- cuisine
+- num_people
+- number
+- feedback
+- seating
+forms:
+- restaurant_form
+intents:
+- request_restaurant:
+    use_entities: false
+- chitchat:
+    use_entities: false
+- inform:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- stop:
+    use_entities: true
+- thankyou:
+    use_entities: true
+- greet:
+    use_entities: true
+slots:
+  cuisine:
+    auto_fill: false
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  feedback:
+    auto_fill: false
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  num_people:
+    auto_fill: false
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  outdoor_seating:
+    auto_fill: false
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  preferences:
+    auto_fill: false
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  requested_slot:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+templates:
+  utter_ask_continue:
+  - text: do you want to continue?
+  utter_ask_cuisine:
+  - text: what cuisine?
+  utter_ask_feedback:
+  - text: please give your feedback on your experience so far
+  utter_ask_num_people:
+  - text: how many people?
+  utter_ask_outdoor_seating:
+  - text: do you want to seat outside?
+  utter_ask_preferences:
+  - text: please provide additional preferences
+  utter_chitchat:
+  - text: chitchat
+  utter_default:
+  - text: sorry, I didn't understand you, please try input something else
+  utter_greet:
+  - text: Hello! I am restaurant search assistant! How can I help?
+  utter_noworries:
+  - text: you are welcome :)
+  utter_slots_values:
+  - text: "I am going to run a restaurant search using the following parameters:\n\
+      \ - cuisine: {cuisine}\n - num_people: {num_people}\n - outdoor_seating: {outdoor_seating}\n\
+      \ - preferences: {preferences}\n - feedback: {feedback}"
+  utter_submit:
+  - text: All done!
+  utter_wrong_cuisine:
+  - text: cuisine type is not in the database, please try again
+  utter_wrong_num_people:
+  - text: number of people should be a positive integer, please try again
+  utter_wrong_outdoor_seating:
+  - text: could not convert input to boolean value, please try again

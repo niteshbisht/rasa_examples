@@ -1,0 +1,10 @@
+[
+    {
+        "name": "zipcode",
+        "pattern": "[0-9]{5}"
+    },
+    {
+        "name": "plates",
+        "pattern": "(?i)(\\b\\[\\\"beans\\\"\\,\\ \\\"rice\\\"\\,\\ \\\"tacos\\\"\\,\\ \\\"cheese\\\"\\]\\b)"
+    }
+]

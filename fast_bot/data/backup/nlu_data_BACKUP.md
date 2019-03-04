@@ -1,0 +1,116 @@
+## intent:affirm
+- uh yes im looking for approval workflow
+- correct
+- ye
+- let's do it
+- yeah
+- um yes
+- right
+- yea
+- yes
+- yes right
+- yeah i need to find case with ID
+- uh yes i want to open case management
+- uh yes
+- right on good bye
+- yes Trade Account
+
+## intent:deny
+- no not wires
+- no close this one
+- no
+- no new selection
+- no im looking for updated cases
+- no thanks
+- no i want latest updates
+- no thank you good bye
+- no thank you
+- no this does not work for me
+
+## intent:greet
+- hi there
+- hello there
+- hey
+- hi
+- hey bot
+- good morning
+- goodmorning
+- hello
+- goodevening
+- goodafternoon
+- good evening
+- morning
+- good afternoon
+
+## intent:inform
+- i want to open [new](probaccount)
+- i want to reopen [new](probaccount)
+- i want to close [existing](probaccount)
+- I want to open [Trade](account) type.
+- I want to open [Retirements](account) type.
+- I want to open [529k](account) type.
+- I want to open [trade](account) type.
+- I want to open [retirements](account) type.
+- I want to open [529k](account) type.
+- open new [trade](account) 
+- open new [retirements](account)
+- open new [529k](account)
+- This is related to [Advisory](queue)
+- This is related to [Branch](queue)
+- this is related to [Advisory](queue)
+- this is related to [Branch](queue)
+- this is related to [Advisory Account](queue)
+- this is related to [Branch Account](queue)
+- this is related to [advisory account](queue)
+- this is related to [branch account](queue)
+- product type is [equity](prodtype)
+- product type is [Equity](prodtype)
+- product type is [mutual](prodtype)
+- product type is [Mutual](prodtype)
+- type is [Equity](prodtype)
+- type is [Mutual](prodtype)
+- type is [equity](prodtype)
+- type is [mutual](prodtype)
+- related to [Equity](prodtype)
+- related to [Mutual](prodtype)
+- related to [mutual](prodtype)
+- related to [equity](prodtype)
+- the adjustment type is [Account Number Change](adjtype)
+- the adjustment type is [Account Type Change](adjtype)
+- the adjustment type is [account type change](adjtype)
+- the adjustment type is [account number change](adjtype)
+- adjustment type [account number change](adjtype)
+- adjustment type [account number change](adjtype)
+
+## intent:request_info
+- do you have RAG [service](info)
+- do you have RAG [phone number](info)
+
+## intent:thankyou
+- um thank you good bye
+- okay cool uh good bye thank you
+- okay thank you good bye
+- you rock
+- and thats all thank you and good bye
+- thank you and good bye
+- sorry about my mistakes thank you good bye
+- noise thank you good bye
+- thank you goodbye noise
+- okay thank you goodbye
+- uh thank you good bye
+- thank you goodbye
+- thank you goodbye noise thank you goodbye
+- breath thank you goodbye
+- thank you
+- okay thank you
+- thanks goodbye
+- ah thank you goodbye
+- thank you noise
+- thank you good bye
+- breath thank you very much goodbye
+- thanks
+- noise thank you goodbye
+- unintelligible thank you goodbye
+- uh okay thank you good bye
+- thank you bye
+- um okay thank you good bye

@@ -1,0 +1,14 @@
+{
+  "nyc": "New York City",
+  "the big apple": "New York City",
+  "wires": "wires transfer workflow",
+  "bwf": "bwf workflow",
+  "workflowhub": "WorkflowDashboard",
+  "threedr": "3DR",
+  "cheque": "MMHelpdesk",
+  "10k": "10k request",
+  "deposit": "Retirement Helpdesk",
+  "retirement": "Retirements request",
+  "transfers": "Transfers Desk",
+  "529": "529K Accounts"
+}

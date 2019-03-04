@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Rasa Core Visualisation</title>
+    <script src="https://dagrejs.github.io/project/dagre-d3/latest/dagre-d3.min.js"></script>
+    <script src="https://dagrejs.github.io/project/dagre/latest/dagre.min.js"></script>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://dagrejs.github.io/project/graphlib-dot/v0.6.3/graphlib-dot.js"></script>
+</head>
+<body>
+<div id="errormsg" style="color: #b00"></div>
+<svg>
+    <style>
+        .node.invisible > rect {
+            display: none;
+        }
+
+        .node.start > rect {
+            fill: #7f7;
+            rx: 30;
+            ry: 18;
+        }
+
+        .node.end > rect {
+            fill: #f77;
+            rx: 30;
+            ry: 18;
+        }
+
+        .node:not(.active) > rect, .node:not(.active) > .label {
+            opacity: 0.4;
+        }
+
+        .edgePath:not(.active) path {
+            opacity: 0.4;
+        }
+
+        .node.ellipsis > rect {
+            fill: #CCC;
+        }
+
+        .node.intent > rect {
+            fill: #7ff;
+        }
+
+        .node.dashed > rect {
+            stroke-dasharray: 5;
+        }
+
+        text {
+            font-weight: 300;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serf, serif;
+            font-size: 14px;
+            color: #1f1d1d;
+        }
+
+        .node rect {
+            stroke: #444;
+            fill: #fff;
+            stroke-width: 1.5px;
+        }
+
+        .edgePath path {
+            stroke: #333;
+            stroke-width: 1.5px;
+        }
+
+        svg {
+            position: fixed;
+            top: 10px;
+            left: 0;
+            height: 100%;
+            width: 100%
+        }
+    </style>
+    <g></g>
+</svg>
+<script>
+
+  function serveGraph() {
+    let oldInputGraphValue;
+
+    const url = 'visualization.dot';
+    const refreshInterval = 500;
+
+    // trigger a refresh by fetching an updated graph
+    setInterval(function () {
+      fetch(url).then(r => r.text()).then(dot => {
+        document.getElementById('errormsg').innerHTML = '';
+        if (oldInputGraphValue === dot) return;
+
+        oldInputGraphValue = dot;
+        drawGraph(dot);
+      }).catch(err => {
+        document.getElementById('errormsg').innerHTML =
+          'Failed to update plot. (' + err.message + ')';
+      });
+    }, refreshInterval);
+  }
+
+  function drawGraph(graph) {
+    let g = graphlibDot.read(graph);
+    // Set margins, if not present
+    if (!g.graph().hasOwnProperty("marginx") &&
+      !g.graph().hasOwnProperty("marginy")) {
+      g.graph().marginx = 20;
+      g.graph().marginy = 20;
+    }
+    g.graph().transition = function (selection) {
+      return selection.transition().duration(300);
+    };
+    // Render the graph into svg g
+    d3.select("svg g").call(render, g);
+  }
+  // Set up zoom support
+  const svg = d3.select("svg"),
+    inner = d3.select("svg g"),
+    zoom = d3.zoom().on("zoom", function () {
+      inner.attr("transform", d3.event.transform);
+    });
+  svg.call(zoom);
+
+  // Create and configure the renderer
+  const render = dagreD3.render();
+
+  let isClient = false;
+  isClient = true;
+
+  if (isClient) {
+    // Mark all nodes and their edges as active
+    cssRules = document.styleSheets[0].cssRules;
+    cssRules[3].style.opacity = 1;
+    cssRules[4].style.opacity = 1;
+
+    let graph;
+    graph = `digraph  {
+0 [class="start active", fillcolor=green, fontsize=12, label=START, style=filled];
+"-1" [class=end, fillcolor=red, fontsize=12, label=END, style=filled];
+1 [class="", fontsize=12, label=utter_ask_howcanhelp];
+2 [class="", fontsize=12, label=utter_on_it];
+3 [class="", fontsize=12, label=utter_ask_location];
+4 [class="", fontsize=12, label=utter_ask_numpeople];
+5 [class="", fontsize=12, label=utter_ask_moreupdates];
+8 [class="", fontsize=12, label=utter_ack_dosearch];
+9 [class="", fontsize=12, label=action_search_restaurants];
+10 [class="", fontsize=12, label=action_suggest];
+11 [class="", fontsize=12, label=utter_ack_findalternatives];
+15 [class="", fontsize=12, label=utter_ack_makereservation];
+16 [class="", fontsize=12, label=utter_goodbye];
+19 [class="", fontsize=12, label=utter_ask_cuisine];
+51 [class="", fontsize=12, label=utter_ask_price];
+10699 [class=intent, fillcolor=lightblue, label=greet, shape=rect, style=filled];
+10700 [class=intent, fillcolor=lightblue, label="informpeople eight", shape=rect, style=filled];
+10701 [class=intent, fillcolor=lightblue, label="informlocation london", shape=rect, style=filled];
+10702 [class=intent, fillcolor=lightblue, label="informlocation rome", shape=rect, style=filled];
+10703 [class=intent, fillcolor=lightblue, label="informlocation bombay", shape=rect, style=filled];
+10704 [class=intent, fillcolor=lightblue, label="informpeople six", shape=rect, style=filled];
+10705 [class=intent, fillcolor=lightblue, label="informpeople four", shape=rect, style=filled];
+10706 [class=intent, fillcolor=lightblue, label="informlocation madrid", shape=rect, style=filled];
+10707 [class=intent, fillcolor=lightblue, label=deny, shape=rect, style=filled];
+10708 [class=intent, fillcolor=lightblue, label=deny, shape=rect, style=filled];
+10709 [class=intent, fillcolor=lightblue, label=affirm, shape=rect, style=filled];
+10710 [class=intent, fillcolor=lightblue, label=thankyou, shape=rect, style=filled];
+10711 [class=intent, fillcolor=lightblue, label=thankyou, shape=rect, style=filled];
+10712 [class=intent, fillcolor=lightblue, label="informcuisine italian", shape=rect, style=filled];
+10713 [class=intent, fillcolor=lightblue, label="informcuisine spanish", shape=rect, style=filled];
+10714 [class=intent, fillcolor=lightblue, label="informcuisine italian", shape=rect, style=filled];
+10715 [class=intent, fillcolor=lightblue, label="informcuisine british", shape=rect, style=filled];
+10716 [class=intent, fillcolor=lightblue, label="informprice cheap", shape=rect, style=filled];
+0 -> 10699  [class="", key=0];
+1 -> 10700  [class="", key=0];
+2 -> 3  [class="", key=NONE, label=""];
+2 -> 19  [class="", key=NONE, label=""];
+2 -> 51  [class="", key=NONE, label=""];
+2 -> 4  [class="", key=NONE, label=""];
+3 -> 10701  [class="", key=0];
+3 -> 10702  [class="", key=0];
+3 -> 10703  [class="", key=0];
+4 -> 10704  [class="", key=0];
+4 -> 10705  [class="", key=0];
+5 -> 10706  [class="", key=0];
+5 -> 10707  [class="", key=0];
+8 -> 9  [class="", key=NONE, label=""];
+9 -> 10  [class="", key=NONE, label=""];
+10 -> 10708  [class="", key=0];
+10 -> 10709  [class="", key=0];
+11 -> 10  [class="", key=NONE, label=""];
+15 -> 10710  [class="", key=0];
+15 -> 10711  [class="", key=0];
+16 -> "-1"  [class="", key=NONE, label=""];
+19 -> 10712  [class="", key=0];
+19 -> 10713  [class="", key=0];
+19 -> 10714  [class="", key=0];
+19 -> 10715  [class="", key=0];
+51 -> 10716  [class="", key=0];
+10699 -> 1  [class="", key=0];
+10700 -> 2  [class="", key=0];
+10701 -> 4  [class="", key=0];
+10702 -> 51  [class="", key=0];
+10703 -> 5  [class="", key=0];
+10704 -> 5  [class="", key=0];
+10705 -> 51  [class="", key=0];
+10706 -> 5  [class="", key=0];
+10707 -> 8  [class="", key=0];
+10708 -> 11  [class="", key=0];
+10709 -> 15  [class="", key=0];
+10710 -> 16  [class="", key=0];
+10711 -> "-1"  [class="", key=0];
+10712 -> 4  [class="", key=0];
+10713 -> 51  [class="", key=0];
+10714 -> 3  [class="", key=0];
+10715 -> 5  [class="", key=0];
+10716 -> 5  [class="", key=0];
+}
+`;
+    drawGraph(graph);
+  } else {
+    serveGraph();
+  }
+
+
+</script>
+</body>
+</html>

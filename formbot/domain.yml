@@ -1,0 +1,84 @@
+intents:
+  - open_account:
+      use_entities: false
+  - chitchat:
+      use_entities: false
+  - inform
+  - affirm
+  - deny
+  - stop
+  - thankyou
+  - greet
+
+entities:
+  - account
+  - accounttype
+  - producttype
+  - adjustmenttype
+  - feedback
+
+slots:
+  account:
+    type: unfeaturized
+    auto_fill: false
+  accounttype:
+    type: unfeaturized
+    auto_fill: false
+  producttype:
+    type: unfeaturized
+    auto_fill: false
+  adjustmenttype:
+    type: unfeaturized
+    auto_fill: false
+  feedback:
+    type: unfeaturized
+    auto_fill: false
+  requested_slot:
+    type: unfeaturized
+
+templates:
+  utter_ask_account:
+    - text: "what account it is?"
+  utter_ask_accounttype:
+    - text: "please let me know the account type?"
+  utter_ask_producttype:
+    - text: "what product type it is for?"
+  utter_ask_adjustmenttype:
+    - text: "What adjustment adjustment type you are looking for?"
+  utter_ask_feedback:
+    - text: "please give your feedback on your experience so far"
+  utter_submit:
+    - text: "All done!"
+  utter_slots_values:
+    - text: "I am going to query with following parameters:\n
+             - account: {account}\n
+             - account type: {accounttype}\n
+             - Product type: {producttype}\n
+             - Adjustment Type: {adjustmenttype}\n
+             - feedback: {feedback}"
+  utter_noworries:
+    - text: "you are welcome :)"
+  utter_chitchat:
+    - text: "chitchat"
+  utter_ask_continue:
+    - text: "do you want to continue?"
+  utter_wrong_account:
+    - text: "account is not in the database, please try again"
+  utter_wrong_account_type:
+    - text: "wrong account type, please try again"
+  utter_wrong_product_type:
+    - text: "Wrong product type, please try again"
+  utter_default:
+    - text: "sorry, I didn't understand you, please try input something else"
+  utter_greet:
+    - text: "Hello! How can I help?"
+
+actions:
+  - utter_slots_values
+  - utter_noworries
+  - utter_chitchat
+  - utter_ask_continue
+  - utter_greet
+
+forms:
+  - account_form
