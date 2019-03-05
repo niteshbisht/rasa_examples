@@ -3,7 +3,10 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/formbot" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/fast_bot" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/formbot" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/formbot_basic" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/restaurantbot" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
