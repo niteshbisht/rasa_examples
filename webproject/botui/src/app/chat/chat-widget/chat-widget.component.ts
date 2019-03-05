@@ -65,7 +65,7 @@ export class ChatWidgetComponent implements OnInit {
 
   public messages = []
 
-  constructor(private httpClient: HttpClient){
+  constructor(private httpClient: HttpClient) {
   }
 
   public addMessage(from, text, type: 'received' | 'sent') {
@@ -112,18 +112,23 @@ export class ChatWidgetComponent implements OnInit {
     //setTimeout(() => this.randomMessage(), 1000)
   }
 
-  sendMessageToAPI(messageText: string){
-    
+  sendMessageToAPI(messageText: string) {
+    if (messageText && messageText.trim().toLowerCase() === 'stop') {
+      messageText = '/restart';
+    }
     let message = {
       "sender": "Rasa",
       "message": messageText
     };
 
-    this.httpClient.post('/webhooks/rest/webhook',message).subscribe(
+    this.httpClient.post('/webhooks/rest/webhook', message).subscribe(
       resp => {
         console.log(resp);
-        if(resp["0"].text){
+        if (resp["0"].text) {
           this.addMessage(this.operator, resp["0"].text, 'received');
+        }
+        if (messageText === '/restart') {
+          this.addMessage(this.operator, 'you can start a new conversation', 'received');
         }
       }
     );

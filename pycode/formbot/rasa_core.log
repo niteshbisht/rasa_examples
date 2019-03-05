@@ -2180,3 +2180,456 @@ There is no active form
 Predicted next action using policy_2_MemoizationPolicy
 Predicted next action 'action_listen' with prob 1.00.
 Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'Rasa'
+Received user message 'hi' with intent '{'name': 'greet', 'confidence': 0.9674586057662964}' and entities '[]'
+Logged UserUtterance - tracker now has 55 events
+Current slot values: 
+	account: None
+	accounttype: None
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: None
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'account_form' with prob 0.33.
+Calling action endpoint to run action 'account_form'.
+Action 'account_form' ended with events '['Form(account_form)', 'SlotSet(key: requested_slot, value: account)']'
+Bot utterance 'BotUttered(text: what account it is?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+There is an active form 'account_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'Rasa'
+Received user message '/restart' with intent '{'name': 'restart', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 61 events
+Current slot values: 
+	account: None
+	accounttype: None
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: account
+Predicted next action 'action_restart' with prob 1.00.
+Action 'action_restart' ended with events '['Restarted()']'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'Rasa'
+Received user message 'Hi' with intent '{'name': 'greet', 'confidence': 0.9674586057662964}' and entities '[]'
+Logged UserUtterance - tracker now has 65 events
+Current slot values: 
+	account: None
+	accounttype: None
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: None
+Current tracker state [None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '11'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'Rasa'
+Received user message 'open new account please' with intent '{'name': 'open_account', 'confidence': 0.9651787281036377}' and entities '[{'start': 5, 'end': 8, 'value': 'new', 'entity': 'account', 'confidence': 0.6673254106023133, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 69 events
+Current slot values: 
+	account: None
+	accounttype: None
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: None
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '12'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'account_form' with prob 1.00.
+Calling action endpoint to run action 'account_form'.
+Action 'account_form' ended with events '['Form(account_form)', 'SlotSet(key: account, value: None)', 'SlotSet(key: requested_slot, value: account)']'
+Bot utterance 'BotUttered(text: account is not in the database, please try again, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Bot utterance 'BotUttered(text: what account it is?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '12'
+There is an active form 'account_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'Rasa'
+Received user message '/restart' with intent '{'name': 'restart', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 77 events
+Current slot values: 
+	account: None
+	accounttype: None
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: account
+Predicted next action 'action_restart' with prob 1.00.
+Action 'action_restart' ended with events '['Restarted()']'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'Rasa'
+Received user message 'hi' with intent '{'name': 'greet', 'confidence': 0.9674586057662964}' and entities '[]'
+Logged UserUtterance - tracker now has 81 events
+Current slot values: 
+	account: None
+	accounttype: None
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: None
+Current tracker state [None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '11'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'Rasa'
+Received user message 'open a new account' with intent '{'name': 'open_account', 'confidence': 0.9341869950294495}' and entities '[]'
+Logged UserUtterance - tracker now has 85 events
+Current slot values: 
+	account: None
+	accounttype: None
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: None
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '12'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'account_form' with prob 1.00.
+Calling action endpoint to run action 'account_form'.
+Action 'account_form' ended with events '['Form(account_form)', 'SlotSet(key: requested_slot, value: account)']'
+Bot utterance 'BotUttered(text: what account it is?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '12'
+There is an active form 'account_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'Rasa'
+Received user message 'trade account' with intent '{'name': 'inform', 'confidence': 0.976300060749054}' and entities '[{'start': 0, 'end': 5, 'value': 'trade', 'entity': 'account', 'confidence': 0.9522396273248876, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 91 events
+Current slot values: 
+	account: None
+	accounttype: None
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: account
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '12'
+There is an active form 'account_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'account_form' with prob 1.00.
+Calling action endpoint to run action 'account_form'.
+Action 'account_form' ended with events '['SlotSet(key: account, value: trade)', 'SlotSet(key: requested_slot, value: accounttype)']'
+Bot utterance 'BotUttered(text: please let me know the account type?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '12'
+There is an active form 'account_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'Rasa'
+Received user message 'advisory' with intent '{'name': 'open_account', 'confidence': 0.773504912853241}' and entities '[{'start': 0, 'end': 8, 'value': 'advisory', 'entity': 'accounttype', 'confidence': 0.8017416692119479, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 97 events
+Current slot values: 
+	account: trade
+	accounttype: None
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: accounttype
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '12'
+There is an active form 'account_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'account_form' with prob 1.00.
+Calling action endpoint to run action 'account_form'.
+Action 'account_form' ended with events '['SlotSet(key: accounttype, value: advisory)', 'SlotSet(key: requested_slot, value: producttype)']'
+Bot utterance 'BotUttered(text: what product type it is for?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '12'
+There is an active form 'account_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'Rasa'
+Received user message 'equity' with intent '{'name': 'inform', 'confidence': 0.9314281344413757}' and entities '[]'
+Logged UserUtterance - tracker now has 103 events
+Current slot values: 
+	account: trade
+	accounttype: advisory
+	adjustmenttype: None
+	feedback: None
+	producttype: None
+	requested_slot: producttype
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '12'
+There is an active form 'account_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'account_form' with prob 1.00.
+Calling action endpoint to run action 'account_form'.
+Action 'account_form' ended with events '['SlotSet(key: producttype, value: equity)', 'SlotSet(key: requested_slot, value: adjustmenttype)']'
+Bot utterance 'BotUttered(text: What adjustment adjustment type you are looking for?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '12'
+There is an active form 'account_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'Rasa'
+Received user message 'account type change' with intent '{'name': 'inform', 'confidence': 0.974490761756897}' and entities '[{'start': 0, 'end': 19, 'value': 'account type change', 'entity': 'adjustmenttype', 'confidence': 0.9270866970237479, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 109 events
+Current slot values: 
+	account: trade
+	accounttype: advisory
+	adjustmenttype: None
+	feedback: None
+	producttype: equity
+	requested_slot: adjustmenttype
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '12'
+There is an active form 'account_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'account_form' with prob 1.00.
+Calling action endpoint to run action 'account_form'.
+Action 'account_form' ended with events '['SlotSet(key: adjustmenttype, value: account type change)', 'SlotSet(key: requested_slot, value: feedback)']'
+Bot utterance 'BotUttered(text: please give your feedback on your experience so far, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '12'
+There is an active form 'account_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'Rasa'
+Received user message 'its nice' with intent '{'name': 'affirm', 'confidence': 0.8385193943977356}' and entities '[]'
+Logged UserUtterance - tracker now has 115 events
+Current slot values: 
+	account: trade
+	accounttype: advisory
+	adjustmenttype: account type change
+	feedback: None
+	producttype: equity
+	requested_slot: feedback
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '12'
+There is an active form 'account_form'
+Predicted next action using policy_3_FormPolicy
+Predicted next action 'account_form' with prob 1.00.
+Calling action endpoint to run action 'account_form'.
+Action 'account_form' ended with events '['SlotSet(key: feedback, value: its nice)', 'Form(None)', 'SlotSet(key: requested_slot, value: None)']'
+Bot utterance 'BotUttered(text: All done!, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}, {'prev_account_form': 1.0, 'intent_open_account': 1.0}]
+There is a memorised next action '7'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'utter_slots_values' with prob 1.00.
+Action 'utter_slots_values' ended with events '[]'
+Bot utterance 'BotUttered(text: I am going to query with following parameters:
+ - account: trade
+ - account type: advisory
+ - Product type: equity
+ - Adjustment Type: account type change
+ - feedback: its nice, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}, {'prev_account_form': 1.0, 'intent_open_account': 1.0}, {'intent_open_account': 1.0, 'prev_utter_slots_values': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'Rasa'
+Received user message 'yes' with intent '{'name': 'affirm', 'confidence': 0.9776033163070679}' and entities '[]'
+Logged UserUtterance - tracker now has 124 events
+Current slot values: 
+	account: trade
+	accounttype: advisory
+	adjustmenttype: account type change
+	feedback: its nice
+	producttype: equity
+	requested_slot: None
+Current tracker state [{'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}, {'prev_account_form': 1.0, 'intent_open_account': 1.0}, {'intent_open_account': 1.0, 'prev_utter_slots_values': 1.0}, {'intent_affirm': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+There is no active form
+Action 'action_listen' was predicted after a user message using policy_0_KerasPolicy. Predicting fallback action: action_default_fallback
+Predicted next action using policy_1_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Action 'action_default_fallback' ended with events '['UserUtteranceReverted()']'
+Bot utterance 'BotUttered(text: sorry, I didn't understand you, please try input something else, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}, {'prev_account_form': 1.0, 'intent_open_account': 1.0}, {'intent_open_account': 1.0, 'prev_utter_slots_values': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'Rasa'
+Received user message 'yes' with intent '{'name': 'affirm', 'confidence': 0.9776033163070679}' and entities '[]'
+Logged UserUtterance - tracker now has 129 events
+Current slot values: 
+	account: trade
+	accounttype: advisory
+	adjustmenttype: account type change
+	feedback: its nice
+	producttype: equity
+	requested_slot: None
+Current tracker state [{'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}, {'prev_account_form': 1.0, 'intent_open_account': 1.0}, {'intent_open_account': 1.0, 'prev_utter_slots_values': 1.0}, {'intent_affirm': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+There is no active form
+Action 'action_listen' was predicted after a user message using policy_0_KerasPolicy. Predicting fallback action: action_default_fallback
+Predicted next action using policy_1_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Action 'action_default_fallback' ended with events '['UserUtteranceReverted()']'
+Bot utterance 'BotUttered(text: sorry, I didn't understand you, please try input something else, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}, {'prev_account_form': 1.0, 'intent_open_account': 1.0}, {'intent_open_account': 1.0, 'prev_utter_slots_values': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'Rasa'
+Received user message 'no' with intent '{'name': 'deny', 'confidence': 0.9479447603225708}' and entities '[]'
+Logged UserUtterance - tracker now has 134 events
+Current slot values: 
+	account: trade
+	accounttype: advisory
+	adjustmenttype: account type change
+	feedback: its nice
+	producttype: equity
+	requested_slot: None
+Current tracker state [{'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}, {'prev_account_form': 1.0, 'intent_open_account': 1.0}, {'intent_open_account': 1.0, 'prev_utter_slots_values': 1.0}, {'intent_deny': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+There is no active form
+Action 'action_listen' was predicted after a user message using policy_0_KerasPolicy. Predicting fallback action: action_default_fallback
+Predicted next action using policy_1_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Action 'action_default_fallback' ended with events '['UserUtteranceReverted()']'
+Bot utterance 'BotUttered(text: sorry, I didn't understand you, please try input something else, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}, {'prev_account_form': 1.0, 'intent_open_account': 1.0}, {'intent_open_account': 1.0, 'prev_utter_slots_values': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'Rasa'
+Received user message 'yes' with intent '{'name': 'affirm', 'confidence': 0.9776033163070679}' and entities '[]'
+Logged UserUtterance - tracker now has 139 events
+Current slot values: 
+	account: trade
+	accounttype: advisory
+	adjustmenttype: account type change
+	feedback: its nice
+	producttype: equity
+	requested_slot: None
+Current tracker state [{'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}, {'prev_account_form': 1.0, 'intent_open_account': 1.0}, {'intent_open_account': 1.0, 'prev_utter_slots_values': 1.0}, {'intent_affirm': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+There is no active form
+Action 'action_listen' was predicted after a user message using policy_0_KerasPolicy. Predicting fallback action: action_default_fallback
+Predicted next action using policy_1_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Action 'action_default_fallback' ended with events '['UserUtteranceReverted()']'
+Bot utterance 'BotUttered(text: sorry, I didn't understand you, please try input something else, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_open_account': 1.0}, {'prev_account_form': 1.0, 'intent_open_account': 1.0}, {'intent_open_account': 1.0, 'prev_utter_slots_values': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'Rasa'
+Received user message '/restart' with intent '{'name': 'restart', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 144 events
+Current slot values: 
+	account: trade
+	accounttype: advisory
+	adjustmenttype: account type change
+	feedback: its nice
+	producttype: equity
+	requested_slot: None
+Predicted next action 'action_restart' with prob 1.00.
+Action 'action_restart' ended with events '['Restarted()']'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
