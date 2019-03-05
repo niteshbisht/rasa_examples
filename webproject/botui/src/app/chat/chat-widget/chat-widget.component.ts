@@ -1,6 +1,7 @@
 import { Component, ElementRef, HostListener, Input, OnInit, ViewChild } from '@angular/core'
 import { Subject } from 'rxjs'
 import { fadeIn, fadeInOut } from '../animations'
+import { HttpClient } from '@angular/common/http';
 
 const randomMessages = [
   'Nice to meet you',
@@ -64,6 +65,9 @@ export class ChatWidgetComponent implements OnInit {
 
   public messages = []
 
+  constructor(private httpClient: HttpClient){
+  }
+
   public addMessage(from, text, type: 'received' | 'sent') {
     this.messages.unshift({
       from,
@@ -104,7 +108,25 @@ export class ChatWidgetComponent implements OnInit {
       return
     }
     this.addMessage(this.client, message, 'sent')
-    setTimeout(() => this.randomMessage(), 1000)
+    this.sendMessageToAPI(message);
+    //setTimeout(() => this.randomMessage(), 1000)
+  }
+
+  sendMessageToAPI(messageText: string){
+    
+    let message = {
+      "sender": "Rasa",
+      "message": messageText
+    };
+
+    this.httpClient.post('/webhooks/rest/webhook',message).subscribe(
+      resp => {
+        console.log(resp);
+        if(resp["0"].text){
+          this.addMessage(this.operator, resp["0"].text, 'received');
+        }
+      }
+    );
   }
 
   @HostListener('document:keypress', ['$event'])
