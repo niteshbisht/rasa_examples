@@ -75,7 +75,7 @@ export class ChatWidgetComponent implements OnInit {
       type,
       date: new Date().getTime(),
     })
-    this.scrollToBottom()
+    setTimeout(()=> this.scrollToBottom(), 90);
   }
 
   public scrollToBottom() {
@@ -124,8 +124,12 @@ export class ChatWidgetComponent implements OnInit {
     this.httpClient.post('/webhooks/rest/webhook', message).subscribe(
       resp => {
         console.log(resp);
-        if (resp["0"].text) {
-          this.addMessage(this.operator, resp["0"].text, 'received');
+        
+        if (resp["0"] && resp["0"].text) {
+          let keys = Object.keys(resp);
+          for(let i in keys){
+            this.addMessage(this.operator, resp[keys[i]].text, 'received');
+          }
         }
         if (messageText === '/restart') {
           this.addMessage(this.operator, 'you can start a new conversation', 'received');

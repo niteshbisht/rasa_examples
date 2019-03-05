@@ -113,28 +113,28 @@ class RestaurantForm(FormAction):
             if slot == 'account':
                 if value.lower() not in self.account_db():
                     dispatcher.utter_template('utter_wrong_account', tracker)
-                    dispatcher.utter_message('Here are few Types which you can '+self.account_db())
+                    dispatcher.utter_message('Here are few Types which you can '+ ", ".join(self.account_db()))
                     # validation failed, set slot to None
                     slot_values[slot] = None
 
             elif slot == 'accounttype':
                 if value.lower() not in self.accounttype():
                     dispatcher.utter_template('utter_wrong_account_type', tracker)
-                    dispatcher.utter_message('Here are few Types which you can '+self.accounttype())
+                    dispatcher.utter_message('Here are few Types which you can '+", ".join(self.accounttype()))
                     # validation failed, set slot to None
                     slot_values[slot] = None
 
             elif slot == 'producttype':
                 if value.lower() not in self.prodtype():
                     dispatcher.utter_template('utter_wrong_product_type', tracker)
-                    dispatcher.utter_message('you can enter one of these '+self.prodtype())
+                    dispatcher.utter_message('you can enter one of these '+", ".join(self.prodtype()))
                     # validation failed, set slot to None
                     slot_values[slot] = None
 
             elif slot == 'adjustmenttype':
                 if value.lower() not in self.adjtype():
                     dispatcher.utter_template('utter_wrong_adjustment_type', tracker)
-                    dispatcher.utter_message('below are the few options '+self.adjtype())
+                    dispatcher.utter_message('below are the few options '+", ".join(self.adjtype()))
                     # validation failed, set slot to None
                     slot_values[slot] = None
 
