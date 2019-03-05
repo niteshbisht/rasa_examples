@@ -1,0 +1,39 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/dist
+/tmp
+/out-tsc
+
+# dependencies
+/webproject/botui/node_modules
+
+# IDEs and editors
+/webproject/botui/.idea
+/webproject/botui/.project
+/webproject/botui/.classpath
+/webproject/botui/.c9/
+/webproject/botui/*.launch
+/webproject/botui/.settings/
+/webproject/botui/*.sublime-workspace
+
+# IDE - VSCode
+/webproject/botui/.vscode/*
+/webproject/botui/!.vscode/settings.json
+/webproject/botui/!.vscode/tasks.json
+/webproject/botui/!.vscode/launch.json
+/webproject/botui/!.vscode/extensions.json
+
+# misc
+/webproject/botui/.sass-cache
+/webproject/botui/connect.lock
+/webproject/botui/coverage
+/webproject/botui/libpeerconnection.log
+/webproject/botui/npm-debug.log
+/webproject/botui/yarn-error.log
+/webproject/botui/testem.log
+/webproject/botui/typings
+
+# System Files
+/webproject/botui/.DS_Store
+/webproject/botui/Thumbs.db
